@@ -3,6 +3,7 @@
 <head>
   <title>Tic-Tac-Toe</title>
   <style>
+    body {background: lightgray;}
     .tic-tac-toe-board {
       display: grid;
       grid-template-columns: repeat(3, 100px);
@@ -21,7 +22,7 @@
       font-weight: bold;
       cursor: pointer;
     }
-    .cell:hover {box-shadow: inset 0 0 3px 5px lightgrey;}
+    .cell:hover {box-shadow: inset 0 0 10px -5px black;}
 
     .player-cell {
       background-color: lightgreen;
@@ -36,22 +37,15 @@
     }
 
     .result {
-      background: lightgrey;
+      background: whitesmoke;
+      padding: 2em;
       box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
       font-size: 1.2em;
       margin-top: 10px;
       text-align: center;
     }
-
-    button {
-      display: block;
-      margin: 0 auto;
-      padding: 10px 20px;
-      font-size: 1.2em;
-      cursor: pointer;
-    }
     .Main-Flex-Container {display: flex;}
-    button.again-btn {
+button.again-btn {
   align-items: center;
   background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
   border: 0;
@@ -74,6 +68,9 @@
   white-space: nowrap;
   cursor: pointer;
 }
+  Main-Flex-Container > div {
+    flex-basis: 50%;
+  }
   </style>
 </head>
 <body>
